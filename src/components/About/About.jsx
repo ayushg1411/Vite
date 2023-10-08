@@ -4,7 +4,7 @@ export default function About() {
 
 
  useEffect(()=>{
-    fetch(`http://192.168.35.239:3050/api/country`)
+    fetch(`musical-snickerdoodle-08c739.netlify.app/api/country`)
     .then((response) => response.json())
     .then((data) => {
     console.log(data);
