@@ -4,11 +4,11 @@ export default function About() {
 
   const [name, setname]=useState('ayu');
  useEffect(()=>{
-    fetch(`asd-er7g.onrender.com/ayush`)
+    fetch(`asd-er7g.onrender.com/about`)
     .then((response) => response.json())
     .then((data) => {
     console.log(data);
-    setname(data);
+    setname(data.name);
     })
     .catch((error) => console.error("Error fetching data:", error));
  })
