@@ -4,7 +4,7 @@ export default function About() {
 
   const [name, setname]=useState('ss');
  useEffect(()=>{
-    fetch( 'asd-er7g.onrender.com/about')
+    fetch( 'https://asd-er7g.onrender.com/about')
     .then((response) => {
         console.log(response);
         setname(response.status);
