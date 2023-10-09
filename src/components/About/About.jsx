@@ -2,15 +2,13 @@ import React, { useEffect, useState } from 'react'
 
 export default function About() {
 
-  const [name, setname]=useState('ayu');
+  const [name, setname]=useState('ss');
  useEffect(()=>{
-    fetch(`asd-er7g.onrender.com/about`)
-    .then((response) => response.json())
-    .then((data) => {
-    console.log(data);
-    setname(data.name);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
+    fetch( 'asd-er7g.onrender.com/about')
+    .then((response) => {
+        console.log(response);
+        setname(response.status);
+        }).catch((error) => console.error("Error fetching data:", error));
  })
 
 
