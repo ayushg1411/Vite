@@ -4,7 +4,7 @@ export default function About() {
 
   const [name, setname]=useState('ss');
   useEffect(() => {
-    fetch('https://asd-er7g.onrender.com/about')
+    fetch('https://pop-guid.onrender.com/about')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
